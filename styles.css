@@ -82,6 +82,20 @@ svg { display: block; }
 .projects { padding-block: 70px 76px; border-top: 1px solid var(--line); }
 .projects-heading { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 35px; }
 .section-note { margin: 0 0 1px; color: var(--muted); font-size: 12px; }
+.work-category { display: flex; align-items: center; justify-content: space-between; gap: 15px; margin-bottom: 18px; color: #666d5b; font-size: 12px; }
+.work-category > span:last-child { font-family: Consolas, monospace; font-size: 9px; letter-spacing: 1.3px; }
+.poetry-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; margin-bottom: 46px; }
+.poem-card { min-width: 0; padding: 32px; border: 1px solid var(--line); border-radius: 9px; background: #fdfdfa; }
+.poem-header { position: relative; padding-bottom: 21px; margin-bottom: 23px; border-bottom: 1px solid var(--line); }
+.poem-number { color: var(--blue); font: 10px Consolas, monospace; letter-spacing: .7px; }
+.poem-header h3 { margin: 16px 0 10px; font-family: "Songti SC", "Noto Serif SC", SimSun, serif; font-size: 31px; font-weight: 500; letter-spacing: 5px; }
+.poem-byline { margin: 0; color: var(--muted); font-size: 10px; letter-spacing: .5px; }
+.poem-body { min-width: 0; font-family: "Songti SC", "Noto Serif SC", SimSun, serif; font-size: 16px; line-height: 2.5; letter-spacing: .02em; overflow-wrap: break-word; }
+.poem-body p { margin: 0; }
+.poem-card-featured { grid-column: 1 / -1; display: grid; grid-template-columns: 175px minmax(0, 1fr); gap: 40px; padding-block: 38px; }
+.poem-card-featured .poem-header { margin: 0; padding: 0 32px 0 0; border-bottom: 0; border-right: 1px solid var(--line); }
+.poem-card-featured .poem-header h3 { font-size: 38px; }
+.poem-card-featured .poem-body { font-size: 17px; }
 .project-card { display: grid; grid-template-columns: 1.16fr 1fr; overflow: hidden; border: 1px solid #dddfd5; border-radius: 9px; background: #fdfdfa; }
 .project-preview { display: flex; position: relative; min-height: 355px; align-items: center; justify-content: center; padding: 45px 35px 55px; overflow: hidden; background: #e9ecdf; }
 .mini-browser { width: 100%; max-width: 400px; overflow: hidden; border: 1px solid #cfd4c5; border-radius: 7px; background: var(--paper); box-shadow: 0 16px 30px #4e5c3612; transform: rotate(-3deg); transition: transform .3s; }
@@ -154,6 +168,11 @@ svg { display: block; }
   .about-lead { font-size: 18px; }
   .project-content { padding: 28px; }
   .project-preview { padding-inline: 26px; }
+  .poem-card { padding: 26px; }
+  .poem-card-featured { grid-template-columns: 135px minmax(0, 1fr); gap: 29px; padding-block: 32px; }
+  .poem-card-featured .poem-header { padding-right: 22px; }
+  .poem-body { font-size: 15px; letter-spacing: 0; }
+  .poem-card-featured .poem-body { font-size: 16px; }
   .mini-asterisk { font-size: 75px; right: 14px; top: 85px; }
   .mini-page { padding-inline: 18px; }
   .mini-page > strong { font-size: 32px; }
@@ -195,6 +214,13 @@ svg { display: block; }
   .projects { padding-block: 49px 51px; }
   .projects-heading { margin-bottom: 25px; }
   .section-note { font-size: 10px; }
+  .work-category { margin-bottom: 15px; font-size: 11px; }
+  .work-category > span:last-child { font-size: 8px; }
+  .poetry-grid { grid-template-columns: minmax(0, 1fr); gap: 16px; margin-bottom: 34px; }
+  .poem-card, .poem-card-featured { display: block; padding: 24px 20px; }
+  .poem-header, .poem-card-featured .poem-header { margin: 0 0 19px; padding: 0 0 18px; border-right: 0; border-bottom: 1px solid var(--line); }
+  .poem-header h3, .poem-card-featured .poem-header h3 { margin-block: 12px 8px; font-size: 30px; }
+  .poem-body, .poem-card-featured .poem-body { font-size: clamp(13px, 3.6vw, 16px); line-height: 2.6; }
   .project-card { grid-template-columns: 1fr; }
   .project-preview { min-height: 300px; padding: 35px 30px 47px; }
   .mini-browser { max-width: 360px; }

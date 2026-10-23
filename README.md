@@ -1,6 +1,6 @@
 # StormDG 的个人主页
 
-简洁浅色的个人网站，包含个人介绍、项目作品和 GitHub 联系入口。使用原生 HTML、CSS 与 JavaScript，可以直接部署到 GitHub Pages。
+简洁浅色的个人网站，包含个人介绍、诗歌作品、网页项目和 GitHub 联系入口。使用原生 HTML、CSS 与 JavaScript，可以直接部署到 GitHub Pages。
 
 ## 本地预览
 
@@ -33,6 +33,6 @@ GitHub 官方说明：<https://docs.github.com/en/pages/getting-started-with-git
 | `script.js` | 页脚年份与复制主页链接 |
 | `favicon.svg` | 浏览器标签页图标 |
 
-个人经历和兴趣仍待补充。当前作品只展示本站，联系入口使用公开的 GitHub 主页，未添加未经确认的邮箱或个人资料。
+个人经历和兴趣仍待补充。当前作品展示三首诗歌《木瑟》《央里》《孤夜》及本站，联系入口使用公开的 GitHub 主页，未添加未经确认的邮箱或个人资料。
 
 新增项目时，可复制 `index.html` 中的 `<article class="project-card">`，替换标题、描述、技术标签、预览内容和源码链接。
